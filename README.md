@@ -1,20 +1,38 @@
 # Memory Game Project
 
-## Table of Contents
+## Page of Working Game
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
 * [Game Working](https://mrmicc.github.io/fend-project-memory-game/)
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The starter project has some HTML and CSS styling to display a static version of the Memory Game project. And it is apart 
+of Web Front-End course of Udaciy for specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
-To get started, open `js/app.js` and start building out the app's functionality
+## JS Files
+### app.js
+It has the main logical of the game
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+### card.js
+A simple object that has the only the constructor of the cards
 
-## Contributing
+### clock
+Has the ability and responsibility of the clock logical, it has the following methdos
+* getTimer - Return the exact time that the game has been played
+* setTimer - Add and update the timer at the HTML
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+### score
+File that has the object responsible for the scores and moves that player has done.
+The object has the following methods
+* getMoves - Set the moves at the HTML
+* countMoves - Count the moves that has been done
+* getStars - Set the stars over the HTML
+* countStar - Count the total of stars that player has
+* removeStar - Remove one start 
+* isGameOver - Check if the games is over or not
+* addWrongMoves - add a count at the wrong moves
+* addMove - add a move 
+* delMove - delete a move
+* isWin - Check if the player win 
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+### helperHtml
+Has the dynamics htmls that was necessary to mount the game

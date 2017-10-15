@@ -37,7 +37,7 @@ Score.prototype.isGameOver = function () {
     return this._wrongMoves >= 9;
 };
 
-Score.prototype.addRongMoves = function () {
+Score.prototype.addWrongMoves = function () {
   this._wrongMoves +=1;
 };
 

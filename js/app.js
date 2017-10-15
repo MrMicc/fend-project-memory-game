@@ -104,7 +104,7 @@ function checkOpenCards() {
                 gameOver('Win');
             }
         }else {
-            score.addRongMoves();
+            score.addWrongMoves();
             score.removeStar();
             if(score.isGameOver()){
                 gameOver('Lost');
