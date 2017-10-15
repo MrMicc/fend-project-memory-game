@@ -10,5 +10,3 @@ Card.prototype.mountCard = function(status){
     return newHtml;
 };
 
-
-

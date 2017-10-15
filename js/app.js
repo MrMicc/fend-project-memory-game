@@ -80,7 +80,6 @@ function resetGame() {
  */
 function addListenerToCards() {
     const cardsHtml =  document.querySelectorAll('ul.deck > li');
-    console.log(cardsHtml);
     cardsHtml.forEach(function (card) {
        card.addEventListener('click',function () {
            if(this.className === 'card'){
@@ -194,8 +193,6 @@ function gameOver(status) {
 }
 
 function eventPlayAgain() {
-
-    console.log(document.getElementById('play-again'));
     document.getElementById('play-again').onclick = function () {
         resetGame();
     };

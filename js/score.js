@@ -52,7 +52,6 @@ Score.prototype.delMove = function () {
 };
 
 Score.prototype.isWin = function () {
-    console.log($('[class="card match"]').length);
     if($('[class="card match"]').length >=14){
         return true;
     }else {
