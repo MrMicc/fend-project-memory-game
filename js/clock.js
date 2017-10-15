@@ -15,8 +15,6 @@ Clock.prototype.getTimer = function () {
     if(seconds < 10) {
         seconds = '0'+seconds;//adding a left zero if it has less then 10 seconds
     }
-
-    console.log(minutes+':'+seconds);
     return minutes+':'+seconds;
 };
 
