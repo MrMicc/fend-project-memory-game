@@ -110,8 +110,8 @@ function checkOpenCards() {
             notMatch();
         }
         openCards = [];
+        score.addMove();
     }
-    score.addMove();
 }
 
 
