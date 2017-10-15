@@ -10,7 +10,6 @@ let cards = [new Card('fa-diamond'),new Card('fa-diamond'), new Card('fa-paper-p
 let openCards = []; //this will have the swiped cards
 
 
-
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
@@ -49,6 +48,7 @@ function shuffle(array) {
 
 // Setting up score Panel
 let score;
+let clock;
 
 //setting up the reset button
 document.getElementsByClassName('restart')[0].addEventListener('click', resetGame);
@@ -62,8 +62,10 @@ display = function () {
     score.getStars();
     score.getMoves();
 
+    clock = new Clock();
     shuffle(cards, 'card');
     mountCards();
+    timer();
 };
 
 
@@ -182,10 +184,10 @@ function gameOver(status) {
 
     modal.style.display = 'block';
     if(status === 'Lost'){
-        modalContent.innerHTML = HTMLGameOverLoose.replace('%dataStatus%', 'You Loose!');
+        modalContent.innerHTML = HTMLGameOverLoose.replace('%dataStatus%', 'You Loose!').replace('%dataTime%', clock.getTimer());
     }else{
         modalContent.innerHTML = HTMLGameOverWin.replace('%dataStatus%', 'Congratulations! You Win!').replace('%dataMoves%',
-            score.countMoves()).replace('%dataStar%', score.countStar());
+            score.countMoves()).replace('%dataStar%', score.countStar()).replace('%dataTime%', clock.getTimer());
     }
 
     eventPlayAgain();
@@ -196,6 +198,14 @@ function eventPlayAgain() {
     document.getElementById('play-again').onclick = function () {
         resetGame();
     };
+}
+
+
+function timer(){
+
+    setInterval(function () {
+        clock.setTimer();
+    },1000);
 }
 
 display();
