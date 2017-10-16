@@ -106,9 +106,10 @@ function checkOpenCards() {
         }else {
             score.addWrongMoves();
             score.removeStar();
-            if(score.isGameOver()){
-                gameOver('Lost');
-            }
+          //it was removed as the instructor of Udacity has asked
+            //  if(score.isGameOver()){
+            //      gameOver('Lost');
+            //  }
             notMatch();
         }
         openCards = [];
