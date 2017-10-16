@@ -29,7 +29,9 @@ Score.prototype.countStar = function () {
 
 Score.prototype.removeStar = function () {
     if((this._wrongMoves%3) === 0){
-       $('[class="fa fa-star"]').first().attr('class', 'fa fa-star disabled');
+        if($('[class="fa fa-star"]').length>=2){ //was added this if as asked by udacity instructor
+            $('[class="fa fa-star"]').first().attr('class', 'fa fa-star disabled');
+        }
     }
 };
 
