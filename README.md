@@ -1,12 +1,22 @@
 # Memory Game Project
 
 ## Page of Working Game
-
+* [How the Game was created](#How the Game was created)
+* [How the game is played](#How the game is played)
 * [Game Working](https://mrmicc.github.io/fend-project-memory-game/)
+* [What the player is to expect from the game](#What the player is to expect from the game)
 ## Instructions
 
 The starter project has some HTML and CSS styling to display a static version of the Memory Game project. And it is apart 
 of Web Front-End course of Udaciy for specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+
+## How the Game was created
+The Game was created from a project of Udacity Nano degree program. The main goal is to do a simple
+memory card game using only HTML and JavaScript
+
+## How the game is played
+When a card is clicked, it shows what symbol's in it. Users should select two cards by guessing their location. 
+Memory Game can be completed when finding all pairs of the same symbols
 
 ## JS Files
 ### app.js
