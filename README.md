@@ -1,10 +1,11 @@
 # Memory Game Project
 
 ## Page of Working Game
-* [How the Game was created](#How the Game was created)
-* [How the game is played](#How the game is played)
+* How the Game was created
+* How the game is played
 * [Game Working](https://mrmicc.github.io/fend-project-memory-game/)
-* [What the player is to expect from the game](#What the player is to expect from the game)
+* What the player is to expect from the game
+
 ## Instructions
 
 The starter project has some HTML and CSS styling to display a static version of the Memory Game project. And it is apart 
