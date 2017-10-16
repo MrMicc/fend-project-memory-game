@@ -54,7 +54,7 @@ let clock;
 document.getElementsByClassName('restart')[0].addEventListener('click', resetGame);
 
 /**
- * Initial funciton responsible to start and config some objects
+ * @description Initial funciton responsible to start and config some objects
  */
 display = function () {
     score = new Score();
@@ -70,7 +70,7 @@ display = function () {
 
 
 /**
- * When the reset button is clicked we are going to force de reload of the page
+ * @description When the reset button is clicked we are going to force de reload of the page
  */
 function resetGame() {
     location.reload(); //reloading the page
@@ -78,7 +78,7 @@ function resetGame() {
 
 
 /**
- * This function is reponsible to run over all cards tags and add an event listener
+ *@description This function is reponsible to run over all cards tags and add an event listener
  */
 function addListenerToCards() {
     const cardsHtml =  document.querySelectorAll('ul.deck > li');
@@ -94,7 +94,7 @@ function addListenerToCards() {
 }
 
 /**
- * This is the core function of the game. Here you will find the main logic of the game
+ *@description This is the core function of the game. Here you will find the main logic of the game
  */
 function checkOpenCards() {
     if(openCards.length === 2){
@@ -159,7 +159,7 @@ function mountCards() {
 
 
 /**
- * this function is generic function responsible to config a specific class name, of an object
+ * @description this function is generic function responsible to config a specific class name, of an object
  * @param object
  * @param className
  */
@@ -175,7 +175,7 @@ function setCss(object, className) {
 }
 
 /**
- * This call the modal that is responsible to show when the game ends.
+ * @description This call the modal that is responsible to show when the game ends.
  * @param status - Win or Lost
  */
 function gameOver(status) {
